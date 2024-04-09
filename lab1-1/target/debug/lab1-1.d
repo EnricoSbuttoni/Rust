@@ -1,0 +1,1 @@
+C:\Users\deric\OneDrive\ -\ Politecnico\ di\ Torino\Desktop\Rust\RUST\Rust\lab1-1\target\debug\lab1-1.exe: C:\Users\deric\OneDrive\ -\ Politecnico\ di\ Torino\Desktop\Rust\RUST\Rust\lab1-1\src\main.rs
