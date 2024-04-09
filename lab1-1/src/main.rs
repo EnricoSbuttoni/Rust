@@ -81,7 +81,7 @@ fn slugify(s: &str) -> String {
     
     
     fn main() {
-    
+    print!("Ciao");
     }
     
     #[cfg(test)]
