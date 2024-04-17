@@ -1,7 +1,9 @@
-use complex_numbers::solution::ComplexNumber;
+
 
 // for this execise see https://doc.rust-lang.org/beta/std/primitive.f64.html
 // you can find examples for all the traits that must be implemented
+
+use lab2_2::solution::ComplexNumber;
 
 #[test]
 pub fn test_create() {

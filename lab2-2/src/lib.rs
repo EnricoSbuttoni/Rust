@@ -1,13 +1,18 @@
-mod solution{
-struct ComplexNumber{
-    real:i32,
-    imag:i32,
+pub mod solution{
+pub struct ComplexNumber{
+    real:f64,
+    imag:f64,
 }
 impl ComplexNumber{
-    fn new(& mut self, a:i32, b:i32){
-        self.real=a;
-        self.imag=b;
+    pub fn new(a:f64, b:f64)->Self{
+       ComplexNumber{real:a,imag:b}
     }
-    
+    pub fn  real(&self)->f64{
+        self.real
+    }
+    pub fn  imag(&self)->f64{
+        self.imag
+    }
+
 }
 }
