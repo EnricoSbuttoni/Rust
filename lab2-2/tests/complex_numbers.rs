@@ -11,7 +11,7 @@ pub fn test_create() {
     assert_eq!(a.real(), 1.0);
     assert_eq!(a.imag(), 2.0);
 }
-/* 
+
 #[test]
 pub fn test_create_from_real() {
     let a = ComplexNumber::from_real(10.0);
@@ -50,6 +50,7 @@ pub fn test_inc_add() {
     assert_eq!(a.to_tuple(), (3.0, 6.0))
 }
 
+ 
 #[test]
 pub fn test_add_with_reference() {
     // references for Rust are new types: you must define the trait for them as RHS
@@ -64,8 +65,11 @@ pub fn test_add_with_reference() {
 
 #[test]
 pub fn test_add_reference_with_reference() {
-    // write yourself the test and adjust traits
-    assert!(true);
+    let a = ComplexNumber::new(1.0, 2.0);
+    let b = ComplexNumber::new(1.0, 2.0);
+
+    let c:ComplexNumber  = &a + &b;    
+    assert_eq!(c.to_tuple(),(2.0,4.0))
 }
 
 
@@ -92,7 +96,7 @@ pub fn test_default_values() {
     }
 }
 
-
+/* 
 #[test]
 pub fn test_convert_into_real() {
     let a = ComplexNumber::from_real(1.0);
@@ -127,7 +131,7 @@ pub fn test_try_form_f64() {
     // and write test
 }
 
-
+*/
 #[test]
 pub fn test_comparison() {
     let c = ComplexNumber::new(3.0, 6.0);
@@ -185,7 +189,7 @@ pub fn test_as_mut() {
 
     assert_eq!(a.real(), 10.0);
 }
-
+/* /
 #[test]
 pub fn test_hash_with_hash_map() {
     // in order to use comeplex numbers in a hash map we need to implement Hash
